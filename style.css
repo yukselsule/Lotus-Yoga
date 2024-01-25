@@ -47,6 +47,7 @@
   max-width: 130rem;
   display: grid;
   grid-template-columns: 4fr 3fr;
+  align-items: center;
 }
 
 .hero-img {
@@ -60,25 +61,124 @@
   padding: 4.2rem;
 }
 
-.heading-primary {
-  color: #2d1211;
-  font-size: 4.2rem;
-  font-weight: 700;
-  line-height: 1.05;
-  letter-spacing: -1px;
-  margin-bottom: 1.6rem;
-}
-
 .hero-description {
-  font-size: 2.2rem;
+  font-size: 1.8rem;
   margin-bottom: 2.4rem;
 }
 
 /* SECTION WHY */
 .section-why {
+  padding: 9.6rem 9.6rem 0 9.6rem;
+}
+
+.reason {
+  padding: 3.2rem;
+  background-color: #fceeee;
+  text-align: center;
+
+  border-radius: 11px;
+
+  box-shadow: 0 0.4rem 1.4rem rgba(0, 0, 0, 0.15);
+}
+
+.reason p {
+  font-size: 1.8rem;
+}
+
+.reason-icon {
+  height: 4.8rem;
+  width: 4.8rem;
+  padding: 0.8rem;
+  margin-bottom: 1.6rem;
+  fill: #431a1a;
+
+  align-self: center;
+
+  background-color: #f9dedd;
+  border-radius: 11px;
+}
+
+/* SECTION FEATURES */
+
+.section-features {
   padding: 9.6rem;
 }
 
-.heading-secondary {
+.feature-img-box {
+  padding: 2.8rem;
+  border-radius: 11px;
+  box-shadow: inset 0 0 0 3px #e98a89;
+}
+
+.feature-img {
+  width: 100%;
+  border-radius: 11px;
+}
+
+.feature-text-box {
+  align-self: center;
+}
+
+.feature-description {
+  font-size: 1.8rem;
+  color: #592323;
+  line-height: 1.2;
+}
+
+/* SECTION PRICING */
+
+.section-pricing {
+  padding: 9.6rem;
+}
+
+.pricing-plan {
+  padding: 3.2rem;
+  background-color: #fceeee;
+  border-radius: 11px;
+}
+
+.pricing-plan-header {
+  margin-bottom: 2.4rem;
+  text-align: center;
+}
+
+.plan-name {
   text-transform: uppercase;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #b24646;
+
+  margin-bottom: 1rem;
+}
+
+.plan-price {
+  font-size: 6.4rem;
+  font-feature-settings: "lnum" 1;
+  font-weight: 700;
+  color: #431a1a;
+  margin-bottom: 0.6rem;
+}
+
+.plan-price span {
+  font-size: 3rem;
+}
+
+.plan-text {
+  font-size: 1.2rem;
+  color: #592323;
+}
+
+.list {
+  list-style: none;
+}
+
+.list-icon {
+  fill: #b24646;
+}
+
+.list-item span {
+  font-size: 1.6rem;
+}
+.pricing-plan--allday {
+  background-color: #f5cdcd;
 }

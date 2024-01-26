@@ -73,9 +73,6 @@ body {
 
 .heading-secondary {
   text-transform: uppercase;
-  /* margin-bottom: 4.8rem;
-  text-decoration: underline solid 2px #fceeee;
-  text-underline-offset: 1em; */
   padding-bottom: 1.2rem;
   border-bottom: solid 2px #fceeee;
   margin-bottom: 3.6rem;
@@ -85,6 +82,8 @@ body {
   font-size: 3.2rem;
   font-weight: 700;
   margin-bottom: 3.6rem;
+  text-decoration: underline solid 2px #e57979;
+  text-underline-offset: 1rem;
 }
 
 /* ////////// GRID ///////////*/
@@ -95,7 +94,7 @@ body {
 
 .grid--2-cols {
   grid-template-columns: 1fr 1fr;
-  column-gap: 1.6rem;
+  column-gap: 3.6rem;
   row-gap: 1.8rem;
 }
 

@@ -81,6 +81,18 @@
   box-shadow: 0 0.4rem 1.4rem rgba(0, 0, 0, 0.15);
 }
 
+.reason-box {
+  transition: all 0.3s;
+}
+
+.reason-box:hover {
+  transform: scale(1.1);
+}
+
+.reason-box:hover .reason-icon {
+  box-shadow: 0 0 1rem rgba(233, 139, 137, 0.614);
+}
+
 .reason p {
   font-size: 1.8rem;
 }
@@ -96,18 +108,20 @@
 
   background-color: #f9dedd;
   border-radius: 11px;
+
+  transition: all 0.3s;
 }
 
 /* SECTION FEATURES */
 
 .section-features {
-  padding: 9.6rem;
+  padding: 9.6rem 9.6rem 0 9.6rem;
 }
 
 .feature-img-box {
   padding: 2.8rem;
   border-radius: 11px;
-  box-shadow: inset 0 0 0 3px #e98a89;
+  box-shadow: inset 0 0 0 3px rgba(233, 139, 137, 0.208);
 }
 
 .feature-img {
@@ -128,13 +142,15 @@
 /* SECTION PRICING */
 
 .section-pricing {
-  padding: 9.6rem;
+  padding: 9.6rem 9.6rem 0 9.6rem;
 }
 
 .pricing-plan {
   padding: 3.2rem;
   background-color: #fceeee;
   border-radius: 11px;
+  display: flex;
+  flex-direction: column;
 }
 
 .pricing-plan-header {
@@ -170,15 +186,57 @@
 
 .list {
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.list-item {
+  display: flex;
+  align-items: center;
 }
 
 .list-icon {
+  width: 4rem;
+  height: 4rem;
+  padding: 0.8rem;
   fill: #b24646;
+  margin-left: 1.2rem;
 }
 
 .list-item span {
   font-size: 1.6rem;
+  line-height: 1.2;
+  align-self: center;
 }
+
+.plan-sign-up {
+  align-self: center;
+  padding-top: 4rem;
+}
+
 .pricing-plan--allday {
   background-color: #f5cdcd;
+}
+
+/* SECTION CTA */
+
+.section-cta {
+  padding: 9.6rem;
+}
+
+.cta {
+  padding: 9.6rem;
+  background-color: #db4544;
+  border-radius: 11px;
+}
+
+/* SECTION GALLERY */
+
+.section-gallery {
+  padding: 9.6rem 9.6rem 0 9.6rem;
+}
+
+.gallery-img {
+  width: 100%;
 }

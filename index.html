@@ -15,6 +15,15 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="general.css" />
 
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
     <title>Lotus Yoga Studio: Where Energy Meets Harmony</title>
   </head>
 
@@ -268,35 +277,53 @@
           </div>
         </div>
       </section>
-      <section class="section-gallery grid grid--2-cols">
-        <figure class="gallery-item">
-          <img
-            class="gallery-img"
-            src="img/class-descriptions.jpg"
-            alt="people in yoga class"
-          />
-        </figure>
-        <figure class="gallery-item">
-          <img
-            class="gallery-img"
-            src="img/program.jpg"
-            alt="people in yoga class"
-          />
-        </figure>
-        <figure class="gallery-item">
-          <img
-            class="gallery-img"
-            src="img/events.jpg"
-            alt="people talking in a yoga class"
-          />
-        </figure>
-        <figure class="gallery-item">
-          <img
-            class="gallery-img"
-            src="img/teacher-training.jpg"
-            alt="two woman talking on a mat"
-          />
-        </figure>
+
+      <section class="section-gallery">
+        <div class="container">
+          <h2 class="heading-secondary">More about us</h2>
+          <div class="grid grid--2-cols">
+            <div class="gallery-item">
+              <a href="#">
+                <img
+                  class="gallery-img"
+                  src="img/class-descriptions.jpg"
+                  alt="people in yoga class"
+                />
+                <div class="gallery-text-box">Class Descriptions</div>
+              </a>
+            </div>
+            <div class="gallery-item">
+              <a href="#">
+                <img
+                  class="gallery-img"
+                  src="img/program.jpg"
+                  alt="people in yoga class"
+                />
+                <div class="gallery-text-box">Class Schedule</div>
+              </a>
+            </div>
+            <div class="gallery-item">
+              <a href="#">
+                <img
+                  class="gallery-img"
+                  src="img/events.jpg"
+                  alt="people talking in yoga class"
+                />
+                <div class="gallery-text-box">Events</div>
+              </a>
+            </div>
+            <div class="gallery-item">
+              <a href="#">
+                <img
+                  class="gallery-img"
+                  src="img/teacher-training.jpg"
+                  alt="two woman talking on a mat"
+                />
+                <div class="gallery-text-box">Yoga Teachers</div>
+              </a>
+            </div>
+          </div>
+        </div>
       </section>
 
       <section class="section-pricing">
@@ -507,6 +534,135 @@
           </div>
         </div>
       </section>
+
+      <section class="section-cta">
+        <div class="container">
+          <div class="cta-text-box">
+            <h3 class="cta-text">
+              Yoga tips, monthly schedules, events, and studio news right into
+              your inbox!
+            </h3>
+            <form class="cta-form">
+              <div>
+                <input
+                  id="email"
+                  type="mail"
+                  placeholder="email address"
+                  name="email-address"
+                  required
+                />
+                <button class="btn btn--full">Sign up</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-contact">
+        <div class="container grid grid--3-cols">
+          <div class="quote">
+            <blockquote>
+              "Yoga is not about touching your toes, it's about what you learn
+              on the way down."
+            </blockquote>
+            <p class="quote-name">— Jigar Gor</p>
+          </div>
+          <div class="contact-box contact-box-light">
+            <div class="contact-box-text">
+              <h4 class="heading-quaternary">Opening Hours</h4>
+            </div>
+            <div class="contact-box-list">
+              <ul>
+                <li class="contact-box-list-item">
+                  <p>You can visit our studio between this hours.</p>
+                </li>
+                <li class="contact-box-list-item">
+                  <label>Monday - Friday</label>
+                  <span>07 <sup>00</sup>- 22 <sup>00</sup></span>
+                </li>
+                <li class="contact-box-list-item">
+                  <label>Saturday - Sunday</label>
+                  <span>07 <sup>00</sup>- 23 <sup>00</sup></span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="contact-box contact-box-dark">
+            <div class="contact-box-text">
+              <h4 class="heading-quaternary">Contact us</h4>
+            </div>
+            <div>
+              <ul class="contact-us-box-list">
+                <li class="contact-us-box-list-item">
+                  <ion-icon
+                    class="contact-us-box-list-icon"
+                    name="location-outline"
+                  ></ion-icon>
+                  <p class="contact-us-box-list-text">
+                    623 Harrison St., 2nd Floor, San Francisco, CA 94107
+                  </p>
+                </li>
+                <li class="contact-us-box-list-item">
+                  <a class="contact-link" href="tel:415-201-6370">
+                    <ion-icon
+                      class="contact-us-box-list-icon"
+                      name="call-outline"
+                    ></ion-icon
+                  ></a>
+                  <a class="contact-link" href="tel:415-201-6370">
+                    <p class="contact-us-box-list-text">415-201-6370</p></a
+                  >
+                </li>
+                <li class="contact-us-box-list-item">
+                  <a class="contact-link" href="mailto:hello@lotusyoga.com">
+                    <ion-icon
+                      class="contact-us-box-list-icon"
+                      name="mail-outline"
+                    ></ion-icon
+                  ></a>
+                  <a class="contact-link" href="mailto:lotusyoga.com">
+                    <p class="contact-us-box-list-text">
+                      hello@lotusyoga.com
+                    </p></a
+                  >
+                </li>
+                <li class="contact-us-box-list-item">
+                  <a class="contact-link" href="#"
+                    ><ion-icon
+                      class="contact-us-box-list-icon"
+                      name="logo-instagram"
+                    ></ion-icon
+                  ></a>
+                  <a class="contact-link" href="#"
+                    ><p class="contact-us-box-list-text">lotusyogastudio</p></a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <footer>
+      <div class="footer">
+        <div class="lotus-yoga-copyright">
+          <img
+            class="lotus-yoga-logo"
+            src="img/lotus-yoga-logo.png"
+            alt="lotus yoga studio logo"
+          />
+          <p class="copyright">
+            Copyright &copy;<span class="year">2024</span> All rights reserved.
+          </p>
+        </div>
+        <div><a class="footer-link" href="#">About us</a></div>
+        <div><a class="footer-link" href="#">Blog</a></div>
+        <div><a class="footer-link" href="#">Create an Account</a></div>
+        <div><a class="footer-link" href="#">Log in</a></div>
+        <div><a class="footer-link" href="#">Privacy Policy</a></div>
+        <div><a class="footer-link" href="#">FAQ</a></div>
+      </div>
+    </footer>
   </body>
 </html>

@@ -63,6 +63,7 @@
 
 .hero-description {
   font-size: 1.8rem;
+  line-height: 1.2;
   margin-bottom: 2.4rem;
 }
 
@@ -121,7 +122,7 @@
 .feature-img-box {
   padding: 2.8rem;
   border-radius: 11px;
-  box-shadow: inset 0 0 0 3px rgba(233, 139, 137, 0.208);
+  box-shadow: inset 0 0 0 3px #fceeee;
 }
 
 .feature-img {
@@ -139,10 +140,56 @@
   line-height: 1.2;
 }
 
+/* SECTION GALLERY */
+
+.section-gallery {
+  padding: 9.6rem 9.6rem 0 9.6rem;
+}
+
+.gallery-item {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  border-radius: 11px;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  box-shadow: 0 0.4rem 1.4rem rgba(0, 0, 0, 0.15);
+  border-radius: 11px;
+}
+
+.gallery-text-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  border-radius: 9px;
+  background-color: #f5cdcdab;
+  padding: 1.6rem;
+
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.gallery-item a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.gallery-item:hover .gallery-text-box {
+  background-color: #f5cdcd;
+}
+
 /* SECTION PRICING */
 
 .section-pricing {
-  padding: 9.6rem 9.6rem 0 9.6rem;
+  padding: 9.6rem;
 }
 
 .pricing-plan {
@@ -223,20 +270,181 @@
 
 .section-cta {
   padding: 9.6rem;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(223, 87, 87, 0.5),
+      rgba(223, 87, 87, 0.534)
+    ),
+    url(/img/cta2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 42rem;
 }
 
-.cta {
+.cta-text-box {
+  text-align: center;
+}
+
+.cta-text {
+  padding: 2.6rem 6rem;
+  font-size: 2.6rem;
+  font-weight: 500;
+  line-height: 1.4;
+  color: #f5cdcd;
+}
+
+.cta-form div {
+  display: flex;
+  justify-content: center;
+  gap: 2.4rem;
+}
+
+.cta-form input {
+  padding: 1.8rem;
+  background-color: #f5cdcd7d;
+
+  font-family: inherit;
+  font-size: 1.8rem;
+  color: inherit;
+
+  border: none;
+  border-radius: 9px;
+  box-shadow: 0 0.4rem 1.4rem rgba(0, 0, 0, 0.15);
+}
+
+/* SECTION CONTACT */
+
+.section-contact {
   padding: 9.6rem;
-  background-color: #db4544;
+}
+
+.quote {
+  align-self: center;
+}
+
+.quote blockquote {
+  font-size: 3.2rem;
+  line-height: 1.2;
+  margin-bottom: 1.6rem;
+}
+
+.quote-name {
+  font-size: 1.6rem;
+  color: #592323;
+  text-align: end;
+}
+
+.contact-box {
+  padding: 3.2rem;
   border-radius: 11px;
 }
 
-/* SECTION GALLERY */
-
-.section-gallery {
-  padding: 9.6rem 9.6rem 0 9.6rem;
+.contact-box-light {
+  background-color: #fceeee;
 }
 
-.gallery-img {
-  width: 100%;
+.contact-box-dark {
+  background-color: #f9dedd;
+}
+
+.contact-box-list-item {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  font-size: 1.6rem;
+  padding-bottom: 1.2rem;
+
+  text-align: center;
+
+  margin-bottom: 2.4rem;
+  border-bottom: dotted 2px #f5cdcd;
+}
+
+.contact-box-list-item:first-child {
+  border-bottom: none;
+}
+
+.contact-box-list-item:last-child {
+  margin-bottom: 0;
+}
+
+.contact-box-list-item span {
+  font-size: 2.4rem;
+  font-weight: 500;
+  color: #b24646;
+}
+
+.contact-us-box-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+.contact-us-box-list-item {
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+  gap: 1.2rem;
+  align-items: center;
+}
+
+.contact-us-box-list-icon {
+  width: 2.4rem;
+  height: 2.4rem;
+  color: #b24646;
+}
+
+.contact-us-box-list-text {
+  font-size: 1.6rem;
+}
+
+.contact-link {
+  text-decoration: none;
+  color: #431a1a;
+}
+
+.contact-link:hover {
+  text-decoration: underline;
+}
+
+/* SECTION FOOTER */
+.footer {
+  padding: 1.2rem;
+  background-color: #431a1a;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-size: 1.4rem;
+}
+
+.lotus-yoga-copyright {
+  display: flex;
+  align-items: center;
+}
+
+.lotus-yoga-logo {
+  height: 9.6rem;
+}
+
+.copyright {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #f8f8f8;
+  margin-top: auto;
+  align-self: center;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  text-decoration: none;
+  color: #f8f8f8;
+  transition: all 0.3s;
+}
+
+.footer-link:hover,
+.footer-link:active {
+  color: #f5cdcd;
 }

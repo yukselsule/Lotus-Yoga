@@ -24,6 +24,12 @@
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
 
+    <script
+      defer
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+    ></script>
+    <script defer src="script.js"></script>
+
     <title>Lotus Yoga Studio: Where Energy Meets Harmony</title>
   </head>
 
@@ -35,12 +41,20 @@
 
       <nav class="main-nav">
         <ul class="main-nav-list">
-          <li><a class="main-nav-link" href="#">section-link</a></li>
-          <li><a class="main-nav-link" href="#">section-link</a></li>
-          <li><a class="main-nav-link" href="#">section-link</a></li>
-          <li><a class="main-nav-link" href="#">section-link</a></li>
+          <li><a class="main-nav-link" href="#why">Why Yoga?</a></li>
+          <li>
+            <a class="main-nav-link" href="#lotus-yoga">Why Lotus Yoga</a>
+          </li>
+          <li><a class="main-nav-link" href="#more">Yoga Classes</a></li>
+          <li><a class="main-nav-link" href="#pricing">Pricing</a></li>
+          <li><a href="#" class="btn btn--full">Sign in</a></li>
         </ul>
       </nav>
+
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
     </header>
 
     <main>
@@ -63,12 +77,12 @@
               a healthier, happier you. Together, we can help you achieve your
               wellness goals.
             </p>
-            <a href="#" class="btn btn--full margin-r-sm">Join us!</a>
-            <a href="#" class="btn btn--outline">Learn more &darr;</a>
+            <a href="#cta" class="btn btn--full margin-r-sm">Join us!</a>
+            <a href="#lotus-yoga" class="btn btn--outline">Learn more &darr;</a>
           </div>
         </div>
       </section>
-      <section class="section-why">
+      <section class="section-why" id="why">
         <div class="container">
           <h2 class="heading-secondary">Why you should do yoga?</h2>
           <div class="why grid grid--4-cols">
@@ -210,7 +224,7 @@
         </div>
       </section>
 
-      <section class="section-features">
+      <section class="section-features" id="lotus-yoga">
         <div class="container">
           <h2 class="heading-secondary">What do we offer?</h2>
           <div class="grid grid--2-cols">
@@ -278,7 +292,7 @@
         </div>
       </section>
 
-      <section class="section-gallery">
+      <section class="section-gallery" id="more">
         <div class="container">
           <h2 class="heading-secondary">More about us</h2>
           <div class="grid grid--2-cols">
@@ -326,7 +340,7 @@
         </div>
       </section>
 
-      <section class="section-pricing">
+      <section class="section-pricing" id="pricing">
         <div class="container">
           <h2 class="heading-secondary">Pricing</h2>
         </div>
@@ -535,7 +549,7 @@
         </div>
       </section>
 
-      <section class="section-cta">
+      <section class="section-cta" id="cta">
         <div class="container">
           <div class="cta-text-box">
             <h3 class="cta-text">
@@ -546,7 +560,7 @@
               <div>
                 <input
                   id="email"
-                  type="mail"
+                  type="email"
                   placeholder="email address"
                   name="email-address"
                   required
@@ -646,20 +660,20 @@
 
     <footer>
       <div class="footer">
-        <div class="lotus-yoga-copyright">
+        <div class="lotus-yoga-copyright margin-r-m">
           <img
             class="lotus-yoga-logo"
             src="img/lotus-yoga-logo.png"
             alt="lotus yoga studio logo"
           />
           <p class="copyright">
-            Copyright &copy;<span class="year">2024</span> All rights reserved.
+            Copyright &copy;<span class="year">2026</span> All rights reserved.
           </p>
         </div>
         <div><a class="footer-link" href="#">About us</a></div>
         <div><a class="footer-link" href="#">Blog</a></div>
         <div><a class="footer-link" href="#">Create an Account</a></div>
-        <div><a class="footer-link" href="#">Log in</a></div>
+        <div><a class="footer-link" href="#">Sign in</a></div>
         <div><a class="footer-link" href="#">Privacy Policy</a></div>
         <div><a class="footer-link" href="#">FAQ</a></div>
       </div>

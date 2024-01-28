@@ -66,6 +66,7 @@ inset 0 0 0 3px #fceeee;
 
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 
 body {
@@ -73,6 +74,8 @@ body {
   line-height: 1;
   font-weight: 400;
   color: #2d1211;
+
+  overflow-x: hidden;
 }
 
 .container {

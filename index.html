@@ -3,6 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Lotus Yoga Studio is a yoga studio that offers classes in-studio and online."
+    />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,6 +20,7 @@
 
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="general.css" />
+    <link rel="stylesheet" href="queries.css" />
 
     <script
       type="module"
@@ -36,7 +43,10 @@
   <body>
     <header class="header">
       <a href="#"
-        ><img class="logo" src="img/lotusyoga.png" alt="Lotus Yoga Studio logo"
+        ><img
+          class="logo"
+          src="img/lotusyoga.webp"
+          alt="Lotus Yoga Studio logo"
       /></a>
 
       <nav class="main-nav">
@@ -63,7 +73,7 @@
           <div class="hero-img-box">
             <picture
               ><img
-                src="img/hero-img.jpg"
+                src="img/hero-img.webp"
                 alt="a woman doing yoga"
                 class="hero-img"
             /></picture>
@@ -86,7 +96,7 @@
         <div class="container">
           <h2 class="heading-secondary">Why you should do yoga?</h2>
           <div class="why grid grid--4-cols">
-            <div class="reason">
+            <div class="reason reason-box-trio">
               <div class="reason-box">
                 <svg
                   class="reason-icon"
@@ -102,7 +112,7 @@
                 <p>Flexibility</p>
               </div>
             </div>
-            <div class="reason">
+            <div class="reason reason-box-trio">
               <div class="reason-box">
                 <svg
                   class="reason-icon"
@@ -119,7 +129,7 @@
                 <p>Strength</p>
               </div>
             </div>
-            <div class="reason">
+            <div class="reason reason-box-trio">
               <div class="reason-box">
                 <svg
                   class="reason-icon"
@@ -133,10 +143,10 @@
                     d="M248,124a56.11,56.11,0,0,0-32-50.61V72a48,48,0,0,0-88-26.49A48,48,0,0,0,40,72v1.39a56,56,0,0,0,0,101.2V176a48,48,0,0,0,88,26.49A48,48,0,0,0,216,176v-1.41A56.09,56.09,0,0,0,248,124ZM88,208a32,32,0,0,1-31.81-28.56A55.87,55.87,0,0,0,64,180h8a8,8,0,0,0,0-16H64A40,40,0,0,1,50.67,86.27,8,8,0,0,0,56,78.73V72a32,32,0,0,1,64,0v68.26A47.8,47.8,0,0,0,88,128a8,8,0,0,0,0,16,32,32,0,0,1,0,64Zm104-44h-8a8,8,0,0,0,0,16h8a55.87,55.87,0,0,0,7.81-.56A32,32,0,1,1,168,144a8,8,0,0,0,0-16,47.8,47.8,0,0,0-32,12.26V72a32,32,0,0,1,64,0v6.73a8,8,0,0,0,5.33,7.54A40,40,0,0,1,192,164Zm16-52a8,8,0,0,1-8,8h-4a36,36,0,0,1-36-36V80a8,8,0,0,1,16,0v4a20,20,0,0,0,20,20h4A8,8,0,0,1,208,112ZM60,120H56a8,8,0,0,1,0-16h4A20,20,0,0,0,80,84V80a8,8,0,0,1,16,0v4A36,36,0,0,1,60,120Z"
                   ></path>
                 </svg>
-                <p>Mental Well-being</p>
+                <p>Mindfulness</p>
               </div>
             </div>
-            <div class="reason">
+            <div class="reason reason-box-duo">
               <div class="reason-box">
                 <svg
                   class="reason-icon"
@@ -150,10 +160,10 @@
                     d="M208,48a87.48,87.48,0,0,0-35.36,7.43c-15.1-25.37-39.92-38-41.06-38.59a8,8,0,0,0-7.16,0c-1.14.58-26,13.22-41.06,38.59A87.48,87.48,0,0,0,48,48a8,8,0,0,0-8,8V96a88.11,88.11,0,0,0,80,87.63v35.43L83.58,200.84a8,8,0,1,0-7.16,14.32l48,24a8,8,0,0,0,7.16,0l48-24a8,8,0,0,0-7.16-14.32L136,219.06V183.63A88.11,88.11,0,0,0,216,96V56A8,8,0,0,0,208,48ZM120,167.56A72.1,72.1,0,0,1,56,96V64.44A72.1,72.1,0,0,1,120,136Zm8-68.2A88.4,88.4,0,0,0,97.36,63.19c9.57-15.79,24-25.9,30.64-30,6.65,4.08,21.08,14.19,30.64,30A88.46,88.46,0,0,0,128,99.36ZM200,96a72.1,72.1,0,0,1-64,71.56V136a72.1,72.1,0,0,1,64-71.56Z"
                   ></path>
                 </svg>
-                <p>Mindfulness</p>
+                <p>Mental Well-being</p>
               </div>
             </div>
-            <div class="reason">
+            <div class="reason reason-box-duo">
               <div class="reason-box">
                 <svg
                   class="reason-icon"
@@ -167,10 +177,10 @@
                     d="M239.43,133l-32-80h0a8,8,0,0,0-9.16-4.84L136,62V40a8,8,0,0,0-16,0V65.58L54.26,80.19A8,8,0,0,0,48.57,85h0v.06L16.57,165a7.92,7.92,0,0,0-.57,3c0,23.31,24.54,32,40,32s40-8.69,40-32a7.92,7.92,0,0,0-.57-3L66.92,93.77,120,82V208H104a8,8,0,0,0,0,16h48a8,8,0,0,0,0-16H136V78.42L187,67.1,160.57,133a7.92,7.92,0,0,0-.57,3c0,23.31,24.54,32,40,32s40-8.69,40-32A7.92,7.92,0,0,0,239.43,133ZM56,184c-7.53,0-22.76-3.61-23.93-14.64L56,109.54l23.93,59.82C78.76,180.39,63.53,184,56,184Zm144-32c-7.53,0-22.76-3.61-23.93-14.64L200,77.54l23.93,59.82C222.76,148.39,207.53,152,200,152Z"
                   ></path>
                 </svg>
-                <p>Balance</p>
+                <p>Weigh Management</p>
               </div>
             </div>
-            <div class="reason">
+            <div class="reason reason-box-trio">
               <div class="reason-box">
                 <svg
                   class="reason-icon"
@@ -187,7 +197,7 @@
                 <p>Concentration</p>
               </div>
             </div>
-            <div class="reason">
+            <div class="reason reason-box-trio">
               <div class="reason-box">
                 <svg
                   class="reason-icon"
@@ -204,7 +214,7 @@
                 <p>Health</p>
               </div>
             </div>
-            <div class="reason">
+            <div class="reason reason-box-trio">
               <div class="reason-box">
                 <svg
                   class="reason-icon"
@@ -217,7 +227,7 @@
                     d="M160,40a32,32,0,1,0-32,32A32,32,0,0,0,160,40ZM128,56a16,16,0,1,1,16-16A16,16,0,0,1,128,56Zm90.34,78.05L173.17,82.83a32,32,0,0,0-24-10.83H106.83a32,32,0,0,0-24,10.83L37.66,134.05a20,20,0,0,0,28.13,28.43l16.3-13.08L65.55,212.28A20,20,0,0,0,102,228.8l26-44.87,26,44.87a20,20,0,0,0,36.41-16.52L173.91,149.4l16.3,13.08a20,20,0,0,0,28.13-28.43Zm-11.51,16.77a4,4,0,0,1-5.66,0c-.21-.2-.42-.4-.65-.58L165,121.76A8,8,0,0,0,152.26,130L175.14,217a7.72,7.72,0,0,0,.48,1.35,4,4,0,1,1-7.25,3.38,6.25,6.25,0,0,0-.33-.63L134.92,164a8,8,0,0,0-13.84,0L88,221.05a6.25,6.25,0,0,0-.33.63,4,4,0,0,1-2.26,2.07,4,4,0,0,1-5-5.45,7.72,7.72,0,0,0,.48-1.35L103.74,130A8,8,0,0,0,91,121.76L55.48,150.24c-.23.18-.44.38-.65.58a4,4,0,1,1-5.66-5.65c.12-.12.23-.24.34-.37L94.83,93.41a16,16,0,0,1,12-5.41h42.34a16,16,0,0,1,12,5.41l45.32,51.39c.11.13.22.25.34.37A4,4,0,0,1,206.83,150.82Z"
                   ></path>
                 </svg>
-                <p>Weigh Management</p>
+                <p>Balance</p>
               </div>
             </div>
           </div>
@@ -239,14 +249,14 @@
             <div class="feature-img-box">
               <img
                 class="feature-img"
-                src="img/body-analysis.jpg"
+                src="img/body-analysis.webp"
                 alt="yoga instructor helping a woman doing a yoga pose"
               />
             </div>
             <div class="feature-img-box">
               <img
                 class="feature-img"
-                src="img/mental-guidance.jpg"
+                src="img/mental-guidance.webp"
                 alt="woman doing a yoga pose"
               />
             </div>
@@ -269,14 +279,14 @@
             <div class="feature-img-box">
               <img
                 class="feature-img"
-                src="img/online-class.jpg"
+                src="img/online-class.webp"
                 alt="a woman doin yoga at home"
               />
             </div>
             <div class="feature-img-box">
               <img
                 class="feature-img"
-                src="img/outdoor-activities.jpg"
+                src="img/outdoor-activities.webp"
                 alt="a group of people doing yoga outdoors"
               />
             </div>
@@ -300,7 +310,7 @@
               <a href="#">
                 <img
                   class="gallery-img"
-                  src="img/class-descriptions.jpg"
+                  src="img/class-descriptions.webp"
                   alt="people in yoga class"
                 />
                 <div class="gallery-text-box">Class Descriptions</div>
@@ -310,7 +320,7 @@
               <a href="#">
                 <img
                   class="gallery-img"
-                  src="img/program.jpg"
+                  src="img/program.webp"
                   alt="people in yoga class"
                 />
                 <div class="gallery-text-box">Class Schedule</div>
@@ -320,7 +330,7 @@
               <a href="#">
                 <img
                   class="gallery-img"
-                  src="img/events.jpg"
+                  src="img/events.webp"
                   alt="people talking in yoga class"
                 />
                 <div class="gallery-text-box">Events</div>
@@ -330,7 +340,7 @@
               <a href="#">
                 <img
                   class="gallery-img"
-                  src="img/teacher-training.jpg"
+                  src="img/teacher-training.webp"
                   alt="two woman talking on a mat"
                 />
                 <div class="gallery-text-box">Yoga Teachers</div>
@@ -344,7 +354,7 @@
         <div class="container">
           <h2 class="heading-secondary">Pricing</h2>
         </div>
-        <div class="container grid grid--3-cols">
+        <div class="container pricing grid grid--3-cols">
           <div class="pricing-plan pricing-plan--day">
             <header class="pricing-plan-header">
               <p class="plan-name">Daytime</p>
@@ -390,8 +400,9 @@
                 >
                   <path
                     d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"
-                  ></path></svg
-                ><span>Studio classes</span>
+                  ></path>
+                </svg>
+                <span>Studio classes</span>
               </li>
               <li class="list-item">
                 <svg
@@ -573,7 +584,7 @@
       </section>
 
       <section class="section-contact">
-        <div class="container grid grid--3-cols">
+        <div class="container contact grid grid--3-cols">
           <div class="quote">
             <blockquote>
               "Yoga is not about touching your toes, it's about what you learn
@@ -617,37 +628,56 @@
                   </p>
                 </li>
                 <li class="contact-us-box-list-item">
-                  <a class="contact-link" href="tel:415-201-6370">
+                  <a
+                    class="contact-link"
+                    aria-label="phone-number"
+                    href="tel:415-201-6370"
+                  >
                     <ion-icon
                       class="contact-us-box-list-icon"
                       name="call-outline"
                     ></ion-icon
                   ></a>
-                  <a class="contact-link" href="tel:415-201-6370">
+                  <a
+                    class="contact-link"
+                    aria-label="phone-number"
+                    href="tel:415-201-6370"
+                  >
                     <p class="contact-us-box-list-text">415-201-6370</p></a
                   >
                 </li>
                 <li class="contact-us-box-list-item">
-                  <a class="contact-link" href="mailto:hello@lotusyoga.com">
+                  <a
+                    class="contact-link"
+                    aria-label="mail-address"
+                    href="mailto:hello@lotusyoga.com"
+                  >
                     <ion-icon
                       class="contact-us-box-list-icon"
                       name="mail-outline"
                     ></ion-icon
                   ></a>
-                  <a class="contact-link" href="mailto:lotusyoga.com">
+                  <a
+                    class="contact-link"
+                    aria-label="mail-address"
+                    href="mailto:lotusyoga.com"
+                  >
                     <p class="contact-us-box-list-text">
                       hello@lotusyoga.com
                     </p></a
                   >
                 </li>
                 <li class="contact-us-box-list-item">
-                  <a class="contact-link" href="#"
+                  <a class="contact-link" aria-label="logo-instagram" href="#"
                     ><ion-icon
                       class="contact-us-box-list-icon"
                       name="logo-instagram"
-                    ></ion-icon
-                  ></a>
-                  <a class="contact-link" href="#"
+                    ></ion-icon>
+                  </a>
+                  <a
+                    class="contact-link"
+                    aria-label="instagram-account"
+                    href="#"
                     ><p class="contact-us-box-list-text">lotusyogastudio</p></a
                   >
                 </li>
@@ -663,7 +693,7 @@
         <div class="lotus-yoga-copyright margin-r-m">
           <img
             class="lotus-yoga-logo"
-            src="img/lotus-yoga-logo.png"
+            src="img/lotus-yoga-logo.webp"
             alt="lotus yoga studio logo"
           />
           <p class="copyright">

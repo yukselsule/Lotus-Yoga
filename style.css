@@ -1,12 +1,13 @@
 /* HEADER */
 .header {
-  padding: 2.4rem;
+  padding: 0 4.8rem;
   background-color: #fceeee;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
 
+  height: 9.6rem;
   position: relative;
 }
 
@@ -255,7 +256,7 @@
   text-transform: uppercase;
   font-size: 1.8rem;
   font-weight: 600;
-  color: #b24646;
+  color: #863534;
 
   margin-bottom: 1rem;
 }
@@ -321,7 +322,7 @@
       rgba(223, 87, 87, 0.5),
       rgba(223, 87, 87, 0.534)
     ),
-    url(/img/cta2.jpg);
+    url(/img/cta2.webp);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

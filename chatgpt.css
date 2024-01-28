@@ -1,0 +1,95 @@
+.grid {
+  display: grid;
+}
+
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3.2rem;
+  justify-content: center;
+}
+
+.pricing-plan {
+  padding: 3.2rem;
+  background-color: #fceeee;
+  border-radius: 11px;
+  display: flex;
+  flex-direction: column;
+}
+
+.pricing-plan-header {
+  margin-bottom: 2.4rem;
+  text-align: center;
+}
+
+.plan-name {
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #863534;
+
+  margin-bottom: 1rem;
+}
+
+.plan-price {
+  font-size: 6.4rem;
+  font-feature-settings: "lnum" 1;
+  font-weight: 700;
+  color: #431a1a;
+  margin-bottom: 0.6rem;
+}
+
+.plan-price span {
+  font-size: 3rem;
+}
+
+.plan-text {
+  font-size: 1.2rem;
+  color: #592323;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.list-item {
+  display: flex;
+  align-items: center;
+}
+
+.list-icon {
+  width: 4rem;
+  height: 4rem;
+  padding: 0.8rem;
+  fill: #b24646;
+  margin-left: 1.2rem;
+}
+
+.list-item span {
+  font-size: 1.6rem;
+  line-height: 1.2;
+  align-self: center;
+}
+
+.plan-sign-up {
+  align-self: center;
+  padding-top: 4rem;
+}
+
+.pricing-plan--allday {
+  background-color: #f5cdcd;
+}
+
+@media (max-width: 56em) {
+  .pricing {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .pricing-plan--allday {
+    grid-row: 2;
+    grid-column: 1 / -1;
+    justify-self: center;
+  }
+}

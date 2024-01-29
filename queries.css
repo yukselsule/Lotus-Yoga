@@ -246,6 +246,8 @@
   .feature-description {
     font-size: 1.6rem;
   }
+
+  /* FOOTER */
 }
 /**************************/
 /* BELOW 496px*/
@@ -260,7 +262,71 @@
     gap: 1.2rem;
   }
 
+  /* REASONS */
+
+  .why {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .reason-box-duo {
+    grid-column: span 2;
+  }
+
   .gallery-text-box {
     font-size: 1.8rem;
+  }
+
+  /* GALLERY */
+  .gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    margin-bottom: 9.6rem;
+  }
+
+  /* PRCING */
+  .section-pricing {
+    padding: 0 12rem;
+  }
+
+  .pricing {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 9.6rem;
+  }
+
+  .pricing-plan--allday {
+    order: 3;
+  }
+
+  /* CTA */
+  .section-cta {
+    padding: 6.8rem;
+    height: 30rem;
+  }
+
+  .cta-text {
+    padding: 1.3rem 3rem;
+    font-size: 2rem;
+  }
+  /* CONTACT */
+  .contact {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* FOOTER */
+
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .lotus-yoga-copyright {
+    grid-row: 1 / 3;
+    margin-right: 2rem;
+    padding: 0 5rem 0 0;
+
+    gap: 1rem;
   }
 }
